@@ -1,0 +1,15 @@
+Goto sql ==> mysql -u root -p
+==================================================================
+Create user
+==================================================================
+CREATE USER lasitha IDENTIFIED BY '123'; 
+grant usage on *.* to lasitha@localhost identified by '123'; 
+grant all privileges on feedback.* to lasitha@localhost;
+==================================================================
+
+CREATE TABLE `Workers` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) DEFAULT NULL,
+  `age_group` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
